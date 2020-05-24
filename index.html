@@ -69,7 +69,8 @@
           <li>
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
-            <img src="img/jpg/repair.jpg" width="620" height="266" alt="Ремонт">
+            <img src="img/jpg/repair.jpg" width="620" height="266"
+              alt="Мужчина на стройке сверлит стену с помощью перфоратора Bosch">
           </li>
         </ul>
         <button type="button">Назад</button>
@@ -84,25 +85,25 @@
       </div>
       <ul>
         <li>
-          <img src="img/jpg/bosch_BFG_9000.jpg" width="184" height="164" alt="Перфоратор Bosch bfg 9000">
+          <img src="img/jpg/bosch_bfg_9000.jpg" width="184" height="164" alt="Перфоратор Bosch bfg 9000">
           <p>Перфоратор <span>bosch bfg 9000</span></p>
           <p>32500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
-          <img src="img/jpg/bosch_BFG_3000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 3000">
+          <img src="img/jpg/bosch_bfg_3000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 3000">
           <p>Перфоратор <span>bosch bfg 3000</span></p>
           <p>22500 Р.</p>
           <p>15500 Р.</p>
         </li>
         <li>
-          <img src="img/jpg/bosch_BFG_6000.jpg" width="144" height="128" alt="Перфоратор Bosch bfg 6000">
+          <img src="img/jpg/bosch_bfg_6000.jpg" width="144" height="128" alt="Перфоратор Bosch bfg 6000">
           <p>Перфоратор <span>bosch bfg 6000</span></p>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
-          <img src="img/jpg/bosch_BFG_2000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 2000">
+          <img src="img/jpg/bosch_bfg_2000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 2000">
           <p>Перфоратор <span>bosch bfg 2000</span></p>
           <p>12500 Р.</p>
         </li>
@@ -162,23 +163,7 @@
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис</p>
       <a href=""><img src="img/png/address_map.png" width="300" height="158" alt="Карта с маркером адреса компании"></a>
-      <p><a href="">Заблудились? Напишите нам!</a></p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <p>
-          <label for="user-name-field">Ваше имя:</label>
-          <input type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия" required>
-          <label for="user-email-field">Ваш e-mail:</label>
-          <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="message-field">Текст письма:</label>
-          <textarea name="message" id="message-field" placeholder="В свободной форме" required></textarea>
-        </p>
-        <p>
-          <input type="submit" name="message-submit" value="Отправить">
-        </p>
-
-      </form>
+      <p><button type="button">Заблудились? Напишите нам!</button></p>
     </section>
   </main>
 
@@ -219,6 +204,31 @@
       <p><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
     </section>
   </footer>
+
+  <!-- Модальное окно. Активируется при нажатии кнопки "Заблудились? Напишите нам!"-->
+  <div>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <p>
+        <label>
+          <span>Ваше имя:</span>
+          <input type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия" required>
+        </label>
+        <label>
+          <span>Ваш e-mail:</span>
+          <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Текст письма:</span>
+          <textarea name="message" id="message-field" placeholder="В свободной форме" required></textarea>
+        </label>
+      </p>
+      <p>
+        <input type="submit" name="message-submit" value="Отправить">
+      </p>
+    </form>
+  </div>
 </body>
 
 </html>

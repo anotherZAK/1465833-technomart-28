@@ -4,40 +4,45 @@
 <head>
 	<meta charset="utf-8">
 	<title>Перфораторы в интернет-магазине Техномарт</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<header>
-		<section>
-			<h2>Поиск и покупка товаров</h2>
-			<a href="index.html"><img src="img/svg/technomart_header_logo.svg" width="108" height="18"
-					alt="Логотип магазина Техномарт"></a>
-			<a href="">Поиск:</a>
-			<a href="">Закладки: 0</a>
-			<a href="">Корзина: 10</a>
-			<a href="">Оформить заказ</a>
+	<header class="main-header">
+		<section class="order-menu">
+		  <h2 class="visually-hidden">Поиск и покупка товаров</h2>
+		  <a href="index.html" class="logo"><img src="img/svg/technomart_header_logo.svg" width="108" height="18"
+			  alt="Логотип магазина Техномарт"></a>
+		  <a href="" class="order-menu-search">Поиск:</a>
+		  <a href="" class="order-menu-bookmarks">Закладки: 0</a>
+		  <a href="" class="order-menu-basket">Корзина: 0</a>
+		  <a href="" class="order-menu-checkout">Оформить заказ</a>
 		</section>
-		<section>
-			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-			<p>+7 (812) 555-05-55</p>
-			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<p>Равшан Джамшутович</p>
-			<a href=""><img src="https://via.placeholder.com/15x10" alt="Выход"></a>
-			<a href="">Войти</a>
-			<a href="">Регистрация</a>
+		<section class="shop-info">
+		  <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+		  <p>+7 (812) 555-05-55</p>
+		  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+		  <ul class="shop-info-registration">
+			<li><a href="">Войти</a></li>
+			<li><a href="">Регистрация</a></li>
+		  </ul>
 		</section>
-		<nav>
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="">Новости</a></li>
-				<li><a href="">Спецпредложения</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
-			</ul>
+		<nav class="main-navigation">
+		  <ul class="site-navigation">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="">Компания</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="">Новости</a></li>
+			<li><a href="">Спецпредложения</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="">Контакты</a></li>
+		  </ul>
 		</nav>
-	</header>
+	  </header>
 
 	<main>
 		<ul>
@@ -207,17 +212,17 @@
 		</section>
 	</main>
 
-	<footer>
-		<section>
-			<h2>Контакты</h2>
+	<footer class="main-footer">
+		<section class="footer-contacts">
+			<h2 class="visually-hidden">Контакты</h2>
 			<a href="index.html"><img src="img/svg/technomart_footer_logo.svg" width="108" height="18"
 					alt="Логотип магазина Техномарт"></a>
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			<p>+7 (812) 555-05-55</p>
 		</section>
-		<section>
-			<h2>Навигация</h2>
-			<ul>
+		<section class="footer-navigation">
+			<h2 class="visually-hidden">Навигация</h2>
+			<ul class="extra-site-navigation">
 				<li><a href="">Компания</a></li>
 				<li><a href="">Новости</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
@@ -229,19 +234,19 @@
 				<li><a href="">Спецпредложения</a></li>
 			</ul>
 		</section>
-		<section>
-			<h2>Обратная связь</h2>
-			<p>&copy; 2010-2017 Компания "Техномарт"
-				Все права защищены</p>
-			<ul>
+		<section class="footer-feedback">
+			<h2 class="visually-hidden">Обратная связь</h2>
+			<p>&copy; 2010-2017 Компания "Техномарт"</p>
+			<p>Все права защищены</p>
+			<ul class="social">
 				<li><a href="blank.html">Вконтакте</a></li>
 				<li><a href="blank.html">Фэйсбук</a></li>
 				<li><a href="blank.html">Инстаграм</a></li>
 			</ul>
 			<p>Обратная связь:</p>
-			<p>mail.htmlacademy.ru</p>
+			<p class="feedback-contact"><a href="mailto:mail.htmlacademy.ru">mail.htmlacademy.ru</a></p>
 			<p>Разработано -</p>
-			<p><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
+			<p class="developer-contact"><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
 		</section>
 	</footer>
 	<!-- Модальное окно с предложением купить выбранный товар-->

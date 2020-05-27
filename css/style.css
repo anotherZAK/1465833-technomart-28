@@ -1,0 +1,277 @@
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --item-price: #A9A9A9;
+  --item-border: #EAEAEA;
+  --basic-darkblue: #293449;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F3F7F9;
+  --basic-yellow: #FFD180;
+  --white: #FFFFFF;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --special-darkyellow: #FFC047;
+  --special-darkblue: #32425C;
+  --special-background: #F1F5F7;
+  --special-grey: #F9F5F0;
+  --info-success: #5FBB2D;
+  --info-warning: #FFBF47;
+  --info-error: #BA2732;
+}
+
+/* Глобальные стили */
+
+body {
+  min-width: 1200px;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Общие стили, стили заголовка */
+
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.main-header li,
+.index-main li,
+.main-footer li {
+  list-style-type: none;
+}
+
+.order-menu,
+.main-navigation .site-navigation {
+  background-color: var(--basic-darkblue);
+}
+
+.order-menu a,
+.site-navigation a {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.order-menu .order-menu-checkout {
+  background-color: var(--basic-green);
+}
+
+.order-menu img {
+  background-color: var(--basic-red);
+}
+
+.shop-info h1 {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.shop-info p:first-of-type {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.shop-info p:last-of-type {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--special-darkblue);
+}
+
+.shop-info-registration a {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+/* Стили основного контента */
+
+
+.index-main h2,
+.index-main h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.all-products {
+  color: var(--white);
+}
+
+.all-products-items li a {
+  background-color: var(--white);
+  opacity: 0.3;
+}
+
+.all-products-items li:nth-child(1) {
+  background-color: var(--info-warning);
+}
+
+.all-products-items li:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.all-products-items li:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.all-products-items li:nth-child(4) {
+  background-color: var(--special-greenlight);
+}
+
+.all-products-items li:nth-child(5) {
+  background-color: var(--special-darkyellow);
+}
+
+.all-products .to-catalog {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+.popular-group {
+  background-color: var(--special-grey);
+}
+
+.popular-group a {
+  background-color: var(--basic-red);
+}
+
+.popular-products-list li,
+.popular-companies-list li {
+  border: 1px solid var(--item-border);
+}
+
+.popular-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.popular-products-list .name {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.popular-products-list .name span {
+  text-transform: uppercase;
+}
+
+.popular-products-list .price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: var(--item-price);
+}
+
+.popular-products-list .discount {
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+.services {
+  background-color: var(--special-background);
+}
+
+.services p,
+.company-features p,
+.contacts p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-list li {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.company--delivery li {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.company-details,
+.default-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+}
+
+
+/* Стили футера */
+
+.main-footer {
+  background-color: var(--special-darkblue);
+}
+
+.footer-contacts,
+.footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-contacts img {
+  background-color: var(--basic-red);
+}
+
+.footer-contacts p {
+  color: var(--basic-background);
+}
+
+.footer-navigation a {
+  color: var(--special-background);
+}
+
+.extra-site-navigation li:nth-child(n+6) a {
+  color: var(--basic-yellow);
+}
+
+.footer-feedback {
+  background-color: var(--basic-darkblue);
+}
+
+.footer-feedback p {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.feedback-contact a,
+.developer-contact a {
+  color: var(--basic-yellow)
+}
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -13,55 +13,77 @@
 
 <body class="page-body">
 	<header class="main-header">
-		<div class="head-wrapper">
-		  <div class="order-menu-wrapper">
+		<div class="order-menu-wrapper">
 			<section class="order-menu">
-			  <h2 class="visually-hidden">Поиск и покупка товаров</h2>
-			  <a href="" class="logo"><img class="logo-img-header" src="img/svg/technomart_header_logo.svg" width="108"
-				  height="18" alt="Логотип магазина Техномарт"></a>
-			  <a href="" class="order-menu-search">Поиск:</a>
-			  <a href="" class="order-menu-bookmarks">Закладки: 0</a>
-			  <a href="" class="order-menu-basket">Корзина: 0</a>
-			  <a href="" class="order-menu-checkout">Оформить заказ</a>
-			</section>
-		  </div>
-		  <section class="shop-info">
-			<h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
-			<p class="shop-info-tel">+7 (812) 555-05-55</p>
-			<p class="shop-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<ul class="shop-info-authorisation">
-			  <li class="shop-info-enter"><a href="">Войти</a></li>
-			  <li class="shop-info-registration"><a href="">Регистрация</a></li>
-			</ul>
-		  </section>
-		  <nav class="main-navigation">
-			<ul class="site-navigation">
-			  <li><a href="index.html">Главная</a></li>
-			  <li><a href="">Компания</a></li>
-			  <li><a href="catalog.html">Каталог</a></li>
-			  <li><a href="">Новости</a></li>
-			  <li><a href="">Спецпредложения</a></li>
-			  <li><a href="">Доставка</a></li>
-			  <li><a href="">Контакты</a></li>
-			</ul>
-		  </nav>
+				<h2 class="visually-hidden">Поиск и покупка товаров</h2>
+				<a href="" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
+					width="108" height="18" alt="Логотип магазина Техномарт"></a>
+				<!-- <a href="" class="order-menu-search">Поиск:</a> -->
+				<form action="https://echo.htmlacademy.ru/courses" method="post">
+				  <input class="order-menu__search" type="text" name="search-area" value="Поиск:">
+				  <input class="visually-hidden" type="submit" name="message-submit" value="Отправить">
+				</form>
+				<a href="" class="order-menu__bookmarks">Закладки: 0</a>
+				<a href="" class="order-menu__basket">Корзина: 0</a>
+				<a href="" class="order-menu__checkout">Оформить заказ</a>
+			  </section>
 		</div>
-	  </header>
+		<section class="shop-info">
+			<h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+			<p class="shop-info__tel">+7 (812) 555-05-55</p>
+			<p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			<p class="shop-info__user"><a href="" class="shop-info-anchor user">Равшан Джамшутович</a></p>
+		</section>
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li class="site-navigation__main"><a href="index.html">Главная</a></li>
+				<li><a href="" class="site-navigation__company">Компания</a></li>
+				<li><a href="catalog.html" class="site-navigation__catalog">Каталог</a></li>
+				<li><a href="" class="site-navigation__news">Новости</a></li>
+				<li><a href="" class="site-navigation__special">Спецпредложения</a></li>
+				<li><a href="" class="site-navigation__delivery">Доставка</a></li>
+				<li><a href="" class="site-navigation__contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<main class="catalog-hammerdrill-main">
 		<ul class="breadcrumbs-catalog-hammerdrill">
-			<li><a href="index.html">Домашняя страница ></a></li>
-			<li><a href="">Каталог ></a></li>
-			<li><a href="">Инструменты ></a></li>
+			<li><a href="index.html" class="breadcrumbs__homepage"><span class="visually-hidden">Домашняя страница</span></a></li>
+			<li>></li>
+			<li><a href="">Каталог</a></li>
+			<li>></li>
+			<li><a href="">Инструменты</a></li>
+			<li>></li>
 			<li><a href="">Перфораторы</a></li>
 		</ul>
 		<h2 class="hammerdrill-head">Перфораторы</h2>
 		<section class="catalog-hammerdrill-filter">
 			<h3>Фильтр:</h3>
-			<p>Цена:</p>
-			<p>0 - 30000</p>
 			<form action="https://echo.htmlacademy.ru/courses" method="get">
-				<fieldset>
+				<fieldset class="filter-item">
+					<legend>Цена:</legend>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min" tabindex="0"></div>
+							<div class="toggle toggle-max" tabindex="0"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">
+								<input type="text" name="min-price" value="0">
+							</label>
+							<p>-</p>
+							<label class="max-price">
+								<input type="text" name="max-price" value="15000">
+							</label>
+						</div>
+
+					</div>
+				</fieldset>
+				<fieldset class="filter-item">
 					<legend>Производители:</legend>
 					<ul>
 						<li>
@@ -96,7 +118,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-item">
 					<legend>Питание:</legend>
 					<ul>
 						<li>
@@ -119,13 +141,13 @@
 		</section>
 		<section class="catalog-hammerdrill-sort">
 			<h3>Сортировка:</h3>
-			<ul>
+			<ul class="hammerdrill-sort-list">
 				<li>По цене</li>
 				<li>По типу</li>
 				<li>По функционалу</li>
+				<li><button type="button" class="button button-up" aria-label="Перейти к следующему слайду"></button></li>
+				<li><button type="button" class="button button-down" aria-label="Перейти к следующему слайду"></button></li>
 			</ul>
-			<button type="button">Вверх</button>
-			<button type="button">Вниз</button>
 		</section>
 		<section class="catalog-hammerdrill">
 			<h2>Каталог перфораторов</h2>
@@ -207,21 +229,23 @@
 				<a href="">Следующая</a>
 			</div>
 		</section>
-		<section class="catalog-hammerdrill-info">
-			<h2>Пара слов о перфораторах</h2>
-			<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-				кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели
-				могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор
-				"трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-		</section>
 	</main>
+	<section class="catalog-hammerdrill-info">
+		<div class="catalog-hammerdrill-info-container">
+		<h2>Пара слов о перфораторах</h2>
+		<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+			кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели
+			могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор
+			"трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</div>
+	</section>
 
 	<footer class="main-footer">
 		<div class="main-footer-wrapper">
 		  <section class="footer-contacts">
 			<h2 class="visually-hidden">Контакты</h2>
-			<a href="index.html"><img src="img/svg/technomart_footer_logo.svg" width="108" height="18"
-				alt="Логотип магазина Техномарт"></a>
+			<a href="index.html" class="order-menu__logo"><img class="logo-img__footer"
+				src="img/svg/technomart_footer_logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			<p>+7 (812) 555-05-55</p>
 		  </section>
@@ -243,17 +267,25 @@
 		<div class="footer-feedback-wrapper">
 		  <section class="footer-feedback">
 			<h2 class="visually-hidden">Обратная связь</h2>
-			<p>&copy; 2010-2017 Компания "Техномарт"</p>
-			<p>Все права защищены</p>
-			<ul class="social">
-			  <li><a href="blank.html">Вконтакте</a></li>
-			  <li><a href="blank.html">Фэйсбук</a></li>
-			  <li><a href="blank.html">Инстаграм</a></li>
+			<div class="copyright-container">
+			  <p>&copy; 2010-2019 Компания «Техномарт»</p>
+			  <p>Все права защищены</p>
+			</div>
+			<ul class="social-list">
+			  <li><a href="" class="social-button vkontakte"><span class="visually-hidden">Вконтакте</span></a>
+			  </li>
+			  <li><a href="" class="social-button facebook"><span class="visually-hidden">Фэйсбук</span></a></li>
+			  <li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a>
+			  </li>
 			</ul>
-			<p>Обратная связь:</p>
-			<p class="feedback-contact"><a href="mailto:mail.htmlacademy.ru">mail.htmlacademy.ru</a></p>
-			<p>Разработано -</p>
-			<p class="developer-contact"><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
+			<div class="feedback-container">
+			  <p>Обратная связь:</p>
+			  <p class="feedback-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+			</div>
+			<div class="developer-container">
+			  <p>Разработано &mdash;</p>
+			  <p class="developer-contact"><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
+			</div>
 		  </section>
 		</div>
 	  </footer>

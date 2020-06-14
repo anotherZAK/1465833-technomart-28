@@ -16,11 +16,11 @@
 		<div class="order-menu-wrapper">
 			<section class="order-menu">
 				<h2 class="visually-hidden">Поиск и покупка товаров</h2>
-				<a href="" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
+				<a href="index.html" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
 					width="108" height="18" alt="Логотип магазина Техномарт"></a>
 				<!-- <a href="" class="order-menu-search">Поиск:</a> -->
 				<form action="https://echo.htmlacademy.ru/courses" method="post">
-				  <input class="order-menu__search" type="text" name="search-area" value="Поиск:">
+				  <input type="search" name="search-area" value="Поиск:">
 				  <input class="visually-hidden" type="submit" name="message-submit" value="Отправить">
 				</form>
 				<a href="" class="order-menu__bookmarks">Закладки: 0</a>
@@ -29,7 +29,7 @@
 			  </section>
 		</div>
 		<section class="shop-info">
-			<h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+			<p class="shop-info__slogan">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 			<p class="shop-info__tel">+7 (812) 555-05-55</p>
 			<p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			<p class="shop-info__user"><a href="" class="shop-info-anchor user">Равшан Джамшутович</a></p>
@@ -49,13 +49,10 @@
 
 	<main class="catalog-hammerdrill-main">
 		<ul class="breadcrumbs-catalog-hammerdrill">
-			<li><a href="index.html" class="breadcrumbs__homepage"><span class="visually-hidden">Домашняя страница</span></a></li>
-			<li>></li>
-			<li><a href="">Каталог</a></li>
-			<li>></li>
-			<li><a href="">Инструменты</a></li>
-			<li>></li>
-			<li><a href="">Перфораторы</a></li>
+			<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__homepage"><span class="visually-hidden">Домашняя страница</span></a></li>
+			<li class="breadcrumbs__item"><a href="">Каталог</a></li>
+			<li class="breadcrumbs__item"><a href="">Инструменты</a></li>
+			<li class="breadcrumbs__item"><a href="">Перфораторы</a></li>
 		</ul>
 		<h2 class="hammerdrill-head">Перфораторы</h2>
 		<section class="catalog-hammerdrill-filter">
@@ -80,39 +77,38 @@
 								<input type="text" name="max-price" value="15000">
 							</label>
 						</div>
-
 					</div>
 				</fieldset>
 				<fieldset class="filter-item">
 					<legend>Производители:</legend>
-					<ul>
-						<li>
+					<ul class="">
+						<li class="filter-option">
 							<label>
-								<input type="checkbox" name="bosch-company" id="filter-bosch-company" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch-company" id="filter-bosch-company" checked>
 								<span>Bosch</span>
 							</label>
 						</li>
-						<li>
+						<li class="filter-option">
 							<label>
-								<input type="checkbox" name="interscol-company" id="filter-interscol-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol-company" id="filter-interscol-company">
 								<span>Интерскол</span>
 							</label>
 						</li>
-						<li>
+						<li class="filter-option">
 							<label>
-								<input type="checkbox" name="makita-company" id="filter-makita-company" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita-company" id="filter-makita-company" checked>
 								<span>Makita</span>
 							</label>
 						</li>
-						<li>
+						<li class="filter-option">
 							<label>
-								<input type="checkbox" name="dewalt-company" id="filter-dewalt-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt-company" id="filter-dewalt-company">
 								<span>Dewalt</span>
 							</label>
 						</li>
-						<li>
+						<li class="filter-option">
 							<label>
-								<input type="checkbox" name="hitachi-company" id="filter-hitachi-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi-company" id="filter-hitachi-company">
 								<span>Hitachi</span>
 							</label>
 						</li>
@@ -142,15 +138,15 @@
 		<section class="catalog-hammerdrill-sort">
 			<h3>Сортировка:</h3>
 			<ul class="hammerdrill-sort-list">
-				<li>По цене</li>
-				<li>По типу</li>
-				<li>По функционалу</li>
+				<li><a href="">По цене</a></li>
+				<li><a href="">По типу</a></li>
+				<li><a href="">По функционалу</a></li>
 				<li><button type="button" class="button button-up" aria-label="Перейти к следующему слайду"></button></li>
 				<li><button type="button" class="button button-down" aria-label="Перейти к следующему слайду"></button></li>
 			</ul>
 		</section>
 		<section class="catalog-hammerdrill">
-			<h2>Каталог перфораторов</h2>
+			<h2 class="visually-hidden">Каталог перфораторов</h2>
 			<ul class="catalog-hammerdrill-list">
 				<li>
 					<a href="">
@@ -290,11 +286,12 @@
 		</div>
 	  </footer>
 	<!-- Модальное окно с предложением купить выбранный товар-->
-	<div>
-		<p>Товар добавлен в корзину!</p>
-		<a href="">Оформить заказ</a>
-		<button type="button">Продолжить покупки</button>
-	</div>
+	<section class="modal modal-basket">
+		<p class="modal-basket__info">Товар добавлен в корзину!</p>
+		<a href="" class="default-button">Оформить заказ</a>
+		<button class="default-button" type="button">Продолжить покупки</button>
+		<button class="modal-close" type="button" aria-label="Закрыть"></button>
+	</section>
 
 </body>
 

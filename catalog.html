@@ -16,21 +16,30 @@
 		<div class="order-menu-wrapper">
 			<section class="order-menu">
 				<h2 class="visually-hidden">Поиск и покупка товаров</h2>
-				<a href="index.html" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
-					width="108" height="18" alt="Логотип магазина Техномарт"></a>
+				<a href="index.html" class="order-menu__logo"><img class="logo-img__header"
+						src="img/svg/technomart_header_logo.svg" width="108" height="18"
+						alt="Логотип магазина Техномарт"></a>
 				<!-- <a href="" class="order-menu-search">Поиск:</a> -->
-				<form action="https://echo.htmlacademy.ru/courses" method="post">
-				  <input type="search" name="search-area" value="Поиск:">
-				  <input class="visually-hidden" type="submit" name="message-submit" value="Отправить">
+				<form class="order-menu-form" action="https://echo.htmlacademy.ru/courses" method="post">
+					<input class="order-menu__search" type="search" name="search-area" value="Поиск:">
+					<button class="order-menu__submit" type="submit" name="message-submit">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 
+					13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421
+					 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331
+					  10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" />
+						</svg>
+					</button>
 				</form>
 				<a href="" class="order-menu__bookmarks">Закладки: 0</a>
 				<a href="" class="order-menu__basket">Корзина: 0</a>
 				<a href="" class="order-menu__checkout">Оформить заказ</a>
-			  </section>
+			</section>
 		</div>
 		<section class="shop-info">
+			<h1 class="visually-hidden">Интернет-магазин строительных материалов</h1>
 			<p class="shop-info__slogan">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-			<p class="shop-info__tel">+7 (812) 555-05-55</p>
+			<p class="shop-info__tel"><a href="">+7 (812) 555-05-55</a></p>
 			<p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			<p class="shop-info__user"><a href="" class="shop-info-anchor user">Равшан Джамшутович</a></p>
 		</section>
@@ -49,7 +58,8 @@
 
 	<main class="catalog-hammerdrill-main">
 		<ul class="breadcrumbs-catalog-hammerdrill">
-			<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__homepage"><span class="visually-hidden">Домашняя страница</span></a></li>
+			<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__homepage"><span
+						class="visually-hidden">Домашняя страница</span></a></li>
 			<li class="breadcrumbs__item"><a href="">Каталог</a></li>
 			<li class="breadcrumbs__item"><a href="">Инструменты</a></li>
 			<li class="breadcrumbs__item"><a href="">Перфораторы</a></li>
@@ -84,31 +94,36 @@
 					<ul class="">
 						<li class="filter-option">
 							<label>
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch-company" id="filter-bosch-company" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox"
+									name="bosch-company" id="filter-bosch-company" checked>
 								<span>Bosch</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol-company" id="filter-interscol-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox"
+									name="interscol-company" id="filter-interscol-company">
 								<span>Интерскол</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita-company" id="filter-makita-company" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox"
+									name="makita-company" id="filter-makita-company" checked>
 								<span>Makita</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt-company" id="filter-dewalt-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox"
+									name="dewalt-company" id="filter-dewalt-company">
 								<span>Dewalt</span>
 							</label>
 						</li>
 						<li class="filter-option">
 							<label>
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi-company" id="filter-hitachi-company">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox"
+									name="hitachi-company" id="filter-hitachi-company">
 								<span>Hitachi</span>
 							</label>
 						</li>
@@ -138,11 +153,13 @@
 		<section class="catalog-hammerdrill-sort">
 			<h3>Сортировка:</h3>
 			<ul class="hammerdrill-sort-list">
-				<li><a href="">По цене</a></li>
-				<li><a href="">По типу</a></li>
-				<li><a href="">По функционалу</a></li>
-				<li><button type="button" class="button button-up" aria-label="Перейти к следующему слайду"></button></li>
-				<li><button type="button" class="button button-down" aria-label="Перейти к следующему слайду"></button></li>
+				<li><a href="catalog.html">По цене</a></li>
+				<li><a href="catalog.html">По типу</a></li>
+				<li><a href="catalog.html">По функционалу</a></li>
+				<li><button type="button" class="button button-up" aria-label="Перейти к следующему слайду"></button>
+				</li>
+				<li><button type="button" class="button button-down" aria-label="Перейти к следующему слайду"></button>
+				</li>
 			</ul>
 		</section>
 		<section class="catalog-hammerdrill">
@@ -228,65 +245,67 @@
 	</main>
 	<section class="catalog-hammerdrill-info">
 		<div class="catalog-hammerdrill-info-container">
-		<h2>Пара слов о перфораторах</h2>
-		<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-			кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели
-			могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор
-			"трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			<h2>Пара слов о перфораторах</h2>
+			<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+				кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели
+				могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор
+				"трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
 	</section>
 
 	<footer class="main-footer">
 		<div class="main-footer-wrapper">
-		  <section class="footer-contacts">
-			<h2 class="visually-hidden">Контакты</h2>
-			<a href="index.html" class="order-menu__logo"><img class="logo-img__footer"
-				src="img/svg/technomart_footer_logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
-			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<p>+7 (812) 555-05-55</p>
-		  </section>
-		  <section class="footer-navigation">
-			<h2 class="visually-hidden">Навигация</h2>
-			<ul class="extra-site-navigation">
-			  <li><a href="">Компания</a></li>
-			  <li><a href="">Новости</a></li>
-			  <li><a href="catalog.html">Каталог</a></li>
-			  <li><a href="">Доставка</a></li>
-			  <li><a href="">Контакты</a></li>
-			  <li><a href="">Материалы</a></li>
-			  <li><a href="">Техника</a></li>
-			  <li><a href="">Инструмент</a></li>
-			  <li><a href="">Спецпредложения</a></li>
-			</ul>
-		  </section>
+			<section class="footer-contacts">
+				<h2 class="visually-hidden">Контакты</h2>
+				<a href="index.html" class="order-menu__logo"><img class="logo-img__footer"
+						src="img/svg/technomart_footer_logo.svg" width="138" height="23"
+						alt="Логотип магазина Техномарт"></a>
+				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>+7 (812) 555-05-55</p>
+			</section>
+			<section class="footer-navigation">
+				<h2 class="visually-hidden">Навигация</h2>
+				<ul class="extra-site-navigation">
+					<li><a href="">Компания</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Материалы</a></li>
+					<li><a href="">Техника</a></li>
+					<li><a href="">Инструмент</a></li>
+					<li><a href="">Спецпредложения</a></li>
+				</ul>
+			</section>
 		</div>
 		<div class="footer-feedback-wrapper">
-		  <section class="footer-feedback">
-			<h2 class="visually-hidden">Обратная связь</h2>
-			<div class="copyright-container">
-			  <p>&copy; 2010-2019 Компания «Техномарт»</p>
-			  <p>Все права защищены</p>
-			</div>
-			<ul class="social-list">
-			  <li><a href="" class="social-button vkontakte"><span class="visually-hidden">Вконтакте</span></a>
-			  </li>
-			  <li><a href="" class="social-button facebook"><span class="visually-hidden">Фэйсбук</span></a></li>
-			  <li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a>
-			  </li>
-			</ul>
-			<div class="feedback-container">
-			  <p>Обратная связь:</p>
-			  <p class="feedback-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-			</div>
-			<div class="developer-container">
-			  <p>Разработано &mdash;</p>
-			  <p class="developer-contact"><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
-			</div>
-		  </section>
+			<section class="footer-feedback">
+				<h2 class="visually-hidden">Обратная связь</h2>
+				<div class="copyright-container">
+					<p>&copy; 2010-2019 Компания «Техномарт»</p>
+					<p>Все права защищены</p>
+				</div>
+				<ul class="social-list">
+					<li><a href="" class="social-button vkontakte"><span class="visually-hidden">Вконтакте</span></a>
+					</li>
+					<li><a href="" class="social-button facebook"><span class="visually-hidden">Фэйсбук</span></a></li>
+					<li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a>
+					</li>
+				</ul>
+				<div class="feedback-container">
+					<p>Обратная связь:</p>
+					<p class="feedback-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+				</div>
+				<div class="developer-container">
+					<p>Разработано &mdash;</p>
+					<p class="developer-contact"><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
+				</div>
+			</section>
 		</div>
-	  </footer>
+	</footer>
 	<!-- Модальное окно с предложением купить выбранный товар-->
 	<section class="modal modal-basket">
+		<h2 class="visually-hidden">Корзина</h2>
 		<p class="modal-basket__info">Товар добавлен в корзину!</p>
 		<a href="" class="default-button">Оформить заказ</a>
 		<button class="default-button" type="button">Продолжить покупки</button>

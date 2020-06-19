@@ -18,7 +18,6 @@
         <h2 class="visually-hidden">Поиск и покупка товаров</h2>
         <a href="" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
             width="108" height="18" alt="Логотип магазина Техномарт"></a>
-        <!-- <a href="" class="order-menu-search">Поиск:</a> -->
         <form class="order-menu-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <input class="order-menu__search" type="search" name="search-area" value="Поиск:">
           <button class="order-menu__submit" type="submit" name="message-submit">
@@ -38,11 +37,23 @@
     <section class="shop-info">
       <h1 class="visually-hidden">Интернет-магазин строительных материалов</h1>
       <p class="shop-info__slogan">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-      <p class="shop-info__tel"><a href="">+7 (812) 555-05-55</a></p>
-      <p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <div class="shop-info__contacts">
+        <p class="shop-info__tel"><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
+        <p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
       <ul class="shop-info__authorisation">
-        <li><a href="" class="shop-info-anchor enter">Войти</a></li>
-        <li><a href="" class="shop-info-anchor registration">Регистрация</a></li>
+        <li class="authorisation-enter-item">
+          <a href="" class="shop-info-anchor enter"><svg class="authorisation-enter-icon" width="21" height="17"
+              viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
+              <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811
+             19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327
+              17.825 15.01 16.986 15.01Z" fill="#C5C5C5" />
+            </svg>Войти</a>
+        </li>
+        <li>
+          <a href="" class="shop-info-anchor registration">Регистрация</a>
+        </li>
       </ul>
     </section>
     <nav class="main-navigation">
@@ -64,6 +75,7 @@
       <ul class="all-products-items">
         <li class="product-item materials">
           <h3>Материалы</h3>
+          <p class="new-item new-all-products">New</p>
           <a href=""><span>На любой вкус</span></a>
         </li>
         <li class="product-item instrument">
@@ -114,33 +126,51 @@
         <a href="" class="default-button popular-group__all">Все популярные товары</a>
       </div>
       <ul class="popular-products-list">
-        <li>
-          <div class="popular-item_container">
+        <li class="popular-products-item">
+          <div class="popular-img_container">
             <img src="img/jpg/bosch_bfg_9000.jpg" width="184" height="164" alt="Перфоратор Bosch bfg 9000">
+          </div>
+          <div class="popular-item-submenu">
+            <button type="button" class="submenu-button add-to-basket">Купить</button>
+            <button type="button" class="submenu-button add-to-bookmarks">В закладки</button>
           </div>
           <p class="popular-item item-name">Перфоратор <span>bosch bfg 9000</span></p>
           <p class="popular-item item-price">32500 Р.</p>
           <p class="popular-item item-discount">25500 Р.</p>
         </li>
-        <li>
-          <div>
+        <li class="popular-products-item">
+          <p class="new-item new-popular-product">New</p>
+          <div class="popular-img_container">
             <img src="img/jpg/bosch_bfg_3000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 3000">
+          </div>
+          <div class="popular-item-submenu">
+            <button type="button" class="submenu-button add-to-basket">Купить</button>
+            <button type="button" class="submenu-button add-to-bookmarks">В закладки</button>
           </div>
           <p class="popular-item item-name">Перфоратор <span>bosch bfg 3000</span></p>
           <p class="popular-item item-price">22500 Р.</p>
           <p class="popular-item item-discount">15500 Р.</p>
         </li>
-        <li>
-          <div class="popular-item_container">
+        <li class="popular-products-item">
+          <div class="popular-img_container">
             <img src="img/jpg/bosch_bfg_6000.jpg" width="144" height="128" alt="Перфоратор Bosch bfg 6000">
+          </div>
+          <div class="popular-item-submenu">
+            <button type="button" class="submenu-button add-to-basket">Купить</button>
+            <button type="button" class="submenu-button add-to-bookmarks">В закладки</button>
           </div>
           <p class="popular-item item-name">Перфоратор <span>bosch bfg 6000</span></p>
           <p class="popular-item item-price">30500 Р.</p>
           <p class="popular-item item-discount">25500 Р.</p>
         </li>
-        <li>
-          <div class="popular-item_container">
+        <li class="popular-products-item">
+          <p class="new-item new-popular-product">New</p>
+          <div class="popular-img_container">
             <img src="img/jpg/bosch_bfg_2000.jpg" width="127" height="112" alt="Перфоратор Bosch bfg 2000">
+          </div>
+          <div class="popular-item-submenu">
+            <button type="button" class="submenu-button add-to-basket">Купить</button>
+            <button type="button" class="submenu-button add-to-bookmarks">В закладки</button>
           </div>
           <p class="popular-item item-name">Перфоратор <span>bosch bfg 2000</span></p>
           <p class="popular-item item-discount item-price-without">12500 Р.</p>
@@ -307,10 +337,10 @@
         <textarea class="input input-textarea" name="message" id="message-field" placeholder="В свободной форме"
           required></textarea>
       </label>
-      <input class="default-button modal-write-us__submit" type="submit" name="message-submit" value="Отправить">
+      <button class="default-button modal-write-us__submit" type="submit" name="message-submit">Отправить</button>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1419,7 +1419,7 @@ p.item-price-without {
   margin-right: 42px;
 }
 
-.hammerdrill-sort-list a:not(.button-sort) {
+.hammerdrill-sort-list .sort-item {
   color: hsl(0, 0%, 70%);
   border-bottom: 1px dotted var(--basic-red);
 }

@@ -1108,11 +1108,8 @@ p.item-price-without {
   margin-bottom: 32px;
 }
 
-.company-contacts-map {
-  margin-bottom: 20px;
-}
-
 .lost-button {
+  margin-top: 20px;
   width: 300px;
   cursor: pointer;
 }

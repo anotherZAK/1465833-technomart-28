@@ -7,8 +7,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize-minimized.css" rel="stylesheet">
-  <link href="css/style-minimized.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,10 +19,12 @@
         <a href="" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
             width="108" height="18" alt="Логотип магазина Техномарт"></a>
         <form class="order-menu-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <input class="order-menu__search" type="search" name="search-area" placeholder="Поиск:">
-          <button class="order-menu__submit" type="submit" name="message-submit">
+          <label aria-label="Поисковая строка">
+            <input class="order-menu__search" type="search" name="search-area" placeholder="Поиск:">
+          </label>
+          <button class="order-menu__submit" type="submit" name="message-submit" aria-label="Отправить поисковый запрос">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044
               13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421
                0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331
                 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" />
@@ -303,8 +305,7 @@
           <li><a href="" class="social-button vkontakte"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li><a href="" class="social-button facebook"><span class="visually-hidden">Фэйсбук</span></a></li>
-          <li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a>
-          </li>
+          <li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="feedback-container">
           <p>Обратная связь:</p>

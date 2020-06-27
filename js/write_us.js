@@ -64,7 +64,7 @@ console.log(!userMessage.value);
 writeUsForm.addEventListener('submit', function (evt) {
   if (!userName.value || !userEmail.value || !userMessage.value) {
     evt.preventDefault();
-    writeUsPopup.classList.remove("modal-error");
+    writeUsPopup.classList.remove('modal-error');
     writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
     writeUsPopup.classList.add('modal-error');
   } else {

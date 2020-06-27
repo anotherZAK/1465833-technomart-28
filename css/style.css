@@ -67,7 +67,7 @@ img {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 1200px;
+  width: 940px;
   height: inherit;
 }
 
@@ -83,10 +83,6 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
-}
-
-.order-menu__logo {
-  margin-left: 130px;
 }
 
 .logo-img__header {
@@ -127,7 +123,7 @@ img {
 
 .order-menu__search {
   margin: 0;
-  width: 281px;
+  width: 270px;
   padding-left: 42px;
   font-size: 18px;
   line-height: 24px;
@@ -151,7 +147,7 @@ img {
 .order-menu__search:focus {
   background: var(--white);
   color: #000000;
-  width: 281px;
+
   height: 41.5px;
 }
 
@@ -167,10 +163,9 @@ img {
 
 .order-menu__bookmarks {
   position: relative;
-  margin-left: 3px;
   min-width: 91px;
   padding-right: 15px;
-  padding-left: 29px;
+  padding-left: 43px;
 }
 
 .order-menu__not-empty {
@@ -186,7 +181,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.3;
   top: 12.5px;
-  left: 6px;
+  left: 20px;
 }
 
 .order-menu__basket {
@@ -227,7 +222,7 @@ img {
 .order-menu__checkout {
   margin: 0;
   padding-top: 9px;
-  padding-left: 19px;
+  padding-left: 18px;
   padding-bottom: 9px;
   padding-right: 17px;
   background-color: #63A63E;
@@ -256,7 +251,6 @@ img {
   margin-bottom: 44.5px;
   margin-left: 30px;
   width: 204px;
-  height: 71px;
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
@@ -387,6 +381,7 @@ img {
 
 .site-navigation a {
   display: inline-block;
+  vertical-align: middle;
   padding-top: 16px;
   padding-bottom: 20px;
   padding-right: 28.5px;
@@ -533,14 +528,14 @@ img {
   padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
-  box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
   color: var(--white);
   box-sizing: border-box;
   text-transform: uppercase;
 }
 
 .product-item a:hover {
-  box-shadow: inset 0 0 0 20px rgba(197, 197, 197, 0.3);
+  box-shadow: inset 0 0 0 200px rgba(197, 197, 197, 0.3);
 }
 
 .product-item a:active {
@@ -620,6 +615,7 @@ img {
 .product-slider.product-slide-1 {
   display: none;
   background-image: url(../img/jpg/repair_1.jpg);
+  background-color: hsl(23, 11%, 63%);
   width: 620px;
   height: 266px;
 }
@@ -627,6 +623,7 @@ img {
 .product-slider.product-slide-2 {
   display: none;
   background-image: url(../img/jpg/repair_2.jpg);
+  background-color: hsl(32, 29%, 75%);
   width: 620px;
   height: 266px;
 }
@@ -700,6 +697,10 @@ img {
   border: none;
 }
 
+.default-button:hover {
+  background-color: hsl(356, 64%, 48%);
+}
+
 .default-button:active {
   background-color: hsl(355, 65%, 44%);
 }
@@ -722,6 +723,7 @@ img {
 .popular-group h2 {
   margin: 0;
   padding-top: 29px;
+  padding-right: 27px;
   padding-bottom: 29px;
   padding-left: 27px;
   color: var(--special-darkblue);
@@ -1375,9 +1377,13 @@ p.item-price-without {
 .catalog-hammerdrill-sort,
 .hammerdrill-sort-list {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   margin: 0;
   background-color: hsl(38, 41%, 95%);
+}
+
+.catalog-hammerdrill-sort li {
+  position: relative;
 }
 
 .catalog-hammerdrill-sort {
@@ -1460,6 +1466,7 @@ p.item-price-without {
 
 .pagination-page {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 5px;
   padding: 12px 15px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1471,8 +1478,10 @@ p.item-price-without {
 }
 
 .pagination-page.current-page {
+  padding: 13px 15.5px;
   color: var(--white);
   background-color: var(--basic-red);
+  border: none;
 }
 
 .pagination-page:last-child {
@@ -1520,9 +1529,10 @@ p.item-price-without {
 
 .main-footer-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 41px;
-  width: 1200px;
+  width: 940px;
 
 }
 
@@ -1549,8 +1559,6 @@ p.item-price-without {
 
 .footer-contacts p {
   margin: 0;
-  margin-left: 133px;
-  width: 330px;
   color: var(--basic-background);
 }
 
@@ -1562,15 +1570,12 @@ p.item-price-without {
   color: var(--special-background);
 }
 
-.footer-navigation {
-  margin-right: 98px;
-}
-
 .extra-site-navigation {
   padding: 0;
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 615px;
 }
 
 .extra-site-navigation li {
@@ -1599,8 +1604,9 @@ p.item-price-without {
 
 .footer-feedback {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  width: 1200px;
+  width: 940px;
   min-height: 107px;
 }
 
@@ -1609,10 +1615,6 @@ p.item-price-without {
 .feedback-container,
 .developer-container {
   margin-top: 36px;
-}
-
-.copyright-container {
-  margin-left: 131px;
 }
 
 .feedback-container {

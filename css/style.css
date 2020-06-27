@@ -1350,7 +1350,9 @@ p.item-price-without {
 }
 
 .filter-input-checkbox+span:hover::after,
-.filter-input-radio+span:hover::after {
+.filter-input-radio+span:hover::after,
+.filter-input-checkbox:focus+span::after,
+.filter-radio-checkbox:focus+span::after {
   opacity: 1;
 }
 

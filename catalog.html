@@ -7,8 +7,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize-minimized.css" rel="stylesheet">
+  <link href="css/style-minimized.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,15 +19,16 @@
         <a href="index.html" class="order-menu__logo"><img class="logo-img__header"
             src="img/svg/technomart_header_logo.svg" width="108" height="18" alt="Логотип магазина Техномарт"></a>
         <form class="order-menu-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <label aria-label="Поисковая строка">
-            <input class="order-menu__search" type="search" name="search-area" placeholder="Поиск:">
-          </label>
-          <button class="order-menu__submit" type="submit" name="message-submit" aria-label="Отправить поисковый запрос">
+          <label for="search-field"></label>
+          <input class="order-menu__search" id="search-field" type="search" name="search-area" placeholder="Поиск:"
+            aria-label="Поисковая строка">
+          <button class="order-menu__submit" type="submit" name="message-submit"
+            aria-label="Отправить поисковый запрос">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421
                  0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5
-                  2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" />
+                  2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
             </svg>
           </button>
         </form>
@@ -40,7 +41,7 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов</h1>
       <p class="shop-info__slogan">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="shop-info__contacts">
-        <p class="shop-info__tel"><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
+        <p class="shop-info__tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="shop-info__user">
@@ -50,15 +51,15 @@
               <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157
            9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901
             6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801
-             14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"
-                fill="#C5C5C5" />
+             14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" />
             </svg>Равшан Джамшутович</a>
-          <a href="unregistered.html" class="user-escape"><svg class="user-logout-icon" width="20" height="17"
-              viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
+          <a href="unregistered.html" class="user-escape" aria-label="Выход из профиля пользователя"><svg
+              class="user-logout-icon" width="20" height="17" viewBox="0 0 20 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
               <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975
                0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698
-                15.01 2.12398 14.327 2.10598 13.952Z" fill="#C5C5C5" />
+                15.01 2.12398 14.327 2.10598 13.952Z" />
             </svg>
           </a>
         </p>
@@ -103,10 +104,10 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                <input type="text" name="min-price" value="0">
+                <input type="text" name="min-price" value="0" aria-label="Минимальная цена">
               </label>
               <label class="max-price">
-                <input type="text" name="max-price" value="30000">
+                <input type="text" name="max-price" value="30000" aria-label="Максимальная цена">
               </label>
             </div>
           </div>
@@ -170,7 +171,7 @@
             </li>
           </ul>
         </fieldset>
-        <label aria-label="Применить фильтр поиска товаров">
+        <label>
           <input class="hammerdrill-filter-submit" type="submit" value="Показать">
         </label>
       </form>
@@ -182,16 +183,16 @@
         <li><a href="catalog.html" class="sort-item sort-by-type">По типу</a></li>
         <li><a href="catalog.html" class="sort-item sort-by-function">По функционалу</a></li>
         <li>
-          <a href="" class="button-sort button-up current-sort-button" aria-label="Перейти к следующему слайду">
+          <a href="" class="button-sort button-up current-sort-button" aria-label="Сортировка по возрастанию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
+              <path d="M5.5 10L0 0H11" />
             </svg>
           </a>
         </li>
         <li>
-          <a href="" class="button-sort button-down" aria-label="Перейти к следующему слайду">
+          <a href="" class="button-sort button-down" aria-label="Сортировка по убыванию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
+              <path d="M5.5 10L0 0H11" />
             </svg>
           </a>
         </li>
@@ -338,20 +339,20 @@
         <a href="index.html" class="order-menu__logo"><img class="logo-img__footer"
             src="img/svg/technomart_footer_logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
+        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </section>
       <section class="footer-navigation">
         <h2 class="visually-hidden">Навигация</h2>
         <ul class="extra-site-navigation">
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
+          <li class="extra-site-navigation-item"><a href="">Компания</a></li>
+          <li class="extra-site-navigation-item"><a href="">Новости</a></li>
+          <li class="extra-site-navigation-item"><a href="catalog.html">Каталог</a></li>
+          <li class="extra-site-navigation-item"><a href="">Доставка</a></li>
+          <li class="extra-site-navigation-item"><a href="">Контакты</a></li>
+          <li class="extra-site-navigation-item"><a href="">Материалы</a></li>
+          <li class="extra-site-navigation-item"><a href="">Техника</a></li>
+          <li class="extra-site-navigation-item"><a href="">Инструмент</a></li>
+          <li class="extra-site-navigation-item"><a href="">Спецпредложения</a></li>
         </ul>
       </section>
     </div>

@@ -7,8 +7,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize-minimized.css" rel="stylesheet">
+  <link href="css/style-minimized.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,15 +19,16 @@
         <a href="" class="order-menu__logo"><img class="logo-img__header" src="img/svg/technomart_header_logo.svg"
             width="108" height="18" alt="Логотип магазина Техномарт"></a>
         <form class="order-menu-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <label aria-label="Поисковая строка">
-            <input class="order-menu__search" type="search" name="search-area" placeholder="Поиск:">
-          </label>
-          <button class="order-menu__submit" type="submit" name="message-submit" aria-label="Отправить поисковый запрос">
+          <label for="search-field"></label>
+          <input class="order-menu__search" id="search-field" type="search" name="search-area" placeholder="Поиск:"
+            aria-label="Поисковая строка">
+          <button class="order-menu__submit" type="submit" name="message-submit"
+            aria-label="Отправить поисковый запрос">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  aria-label="пиктограмма поиска" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044
+              <path aria-label="пиктограмма поиска" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044
               13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421
                0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331
-                10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" />
+                10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
             </svg>
           </button>
         </form>
@@ -40,21 +41,22 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов</h1>
       <p class="shop-info__slogan">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="shop-info__contacts">
-        <p class="shop-info__tel"><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
+        <p class="shop-info__tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <p class="shop-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <ul class="shop-info__authorisation">
         <li class="authorisation-enter-item">
-          <a href="" class="shop-info-anchor enter"><svg class="authorisation-enter-icon" width="21" height="17"
-              viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Пиктограмма входа в профиль пользователя">
-              <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
+          <a href="" class="shop-info-anchor user-enter"><svg class="authorisation-enter-icon" width="21" height="17"
+              viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-label="Пиктограмма входа в профиль пользователя">
+              <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" />
               <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811
              19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327
-              17.825 15.01 16.986 15.01Z" fill="#C5C5C5" />
+              17.825 15.01 16.986 15.01Z" />
             </svg>Войти</a>
         </li>
         <li>
-          <a href="" class="shop-info-anchor registration">Регистрация</a>
+          <a href="" class="shop-info-anchor user-registration">Регистрация</a>
         </li>
       </ul>
     </section>
@@ -74,52 +76,52 @@
   <main class="index-main">
     <section class="all-products">
       <h2 class="visually-hidden">Полный перечень товаров и услуг</h2>
-      <ul class="all-products-items">
-        <li class="product-item materials">
+      <div class="all-products-items">
+        <div class="product-item materials">
           <h3>Материалы</h3>
           <p class="new-item new-all-products">New</p>
           <a href=""><span>На любой вкус</span></a>
-        </li>
-        <li class="product-item instrument">
+        </div>
+        <div class="product-item instrument">
           <h3>Инструмент</h3>
           <a href="">На все случаи</a>
-        </li>
-        <li class="product-item machinery">
+        </div>
+        <div class="product-item machinery">
           <h3>Техника</h3>
           <a href="">Для стройки</a>
-        </li>
-        <li class="product-item discount">
+        </div>
+        <div class="product-item discount">
           <h3>Скидка 50%</h3>
           <a href="">На 350 товаров</a>
-        </li>
-        <li class="product-item delivery">
+        </div>
+        <div class="product-item delivery">
           <h3>Доставка</h3>
           <a href="">Бесплатно</a>
-        </li>
-      </ul>
-      <div class="product-slider-wrapper">
-        <ul>
-          <li class="product-slider product-slide-1">
-            <h3 class="slide-title">Дрели</h3>
-            <p class="slide-text">Соседям на радость!</p>
-          </li>
-          <li class="product-slider product-slide-2 current-product-slide">
-            <h3 class="slide-title">Перфораторы</h3>
-            <p class="slide-text">Настоящие мужские игрушки</p>
-          </li>
-        </ul>
-        <div class="slide-controls-arrow">
-          <button type="button" class="slide-button-arrow arrow-left"
-            aria-label="Перейти к предыдущему слайду"></button>
-          <button type="button" class="slide-button-arrow arrow-right"
-            aria-label="Перейти к следующему слайду"></button>
         </div>
-        <div class="slide-controls-circle">
-          <button type="button" class="slide-button-circle circle-one" aria-label="Первый слайд"></button>
-          <button type="button" class="slide-button-circle circle-two current-slide-circle"
-            aria-label="Второй слайд"></button>
+        <div class="product-slider-wrapper">
+          <ul>
+            <li class="product-slider product-slide-1">
+              <h3 class="slide-title">Дрели</h3>
+              <p class="slide-text">Соседям на радость!</p>
+            </li>
+            <li class="product-slider product-slide-2 current-product-slide">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p class="slide-text">Настоящие мужские игрушки</p>
+            </li>
+          </ul>
+          <div class="slide-controls-arrow">
+            <button type="button" class="slide-button-arrow arrow-left"
+              aria-label="Перейти к предыдущему слайду"></button>
+            <button type="button" class="slide-button-arrow arrow-right"
+              aria-label="Перейти к следующему слайду"></button>
+          </div>
+          <div class="slide-controls-circle">
+            <button type="button" class="slide-button-circle circle-one" aria-label="Первый слайд"></button>
+            <button type="button" class="slide-button-circle circle-two current-slide-circle"
+              aria-label="Второй слайд"></button>
+          </div>
+          <a href="catalog.html" class="default-button to-catalog">Открыть каталог</a>
         </div>
-        <a href="catalog.html" class="default-button to-catalog">Открыть каталог</a>
       </div>
     </section>
     <section class="popular-products">
@@ -277,20 +279,20 @@
         <a href="" class="order-menu__logo"><img class="logo-img__footer" src="img/svg/technomart_footer_logo.svg"
             width="138" height="23" alt="Логотип магазина Техномарт"></a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
+        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </section>
       <section class="footer-navigation">
         <h2 class="visually-hidden">Навигация</h2>
         <ul class="extra-site-navigation">
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
+          <li class="extra-site-navigation-item"><a href="">Компания</a></li>
+          <li class="extra-site-navigation-item"><a href="">Новости</a></li>
+          <li class="extra-site-navigation-item"><a href="catalog.html">Каталог</a></li>
+          <li class="extra-site-navigation-item"><a href="">Доставка</a></li>
+          <li class="extra-site-navigation-item"><a href="">Контакты</a></li>
+          <li class="extra-site-navigation-item"><a href="">Материалы</a></li>
+          <li class="extra-site-navigation-item"><a href="">Техника</a></li>
+          <li class="extra-site-navigation-item"><a href="">Инструмент</a></li>
+          <li class="extra-site-navigation-item"><a href="">Спецпредложения</a></li>
         </ul>
       </section>
     </div>

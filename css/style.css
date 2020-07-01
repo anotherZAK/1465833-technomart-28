@@ -1442,12 +1442,14 @@ p.item-price-without {
 
 .catalog-hammerdrill-sort li {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .catalog-hammerdrill-sort {
+  flex-wrap: nowrap;
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   background-color: var(--basic-lightgrey);
   border-radius: 3px;
 }
@@ -1672,6 +1674,7 @@ p.item-price-without {
 .footer-feedback {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   width: 940px;
   min-height: 107px;
@@ -1684,12 +1687,13 @@ p.item-price-without {
   margin-top: 36px;
 }
 
-.feedback-container {
-  margin-left: 116px;
+.copyright-container {
+  max-width: 230px;
 }
 
-.developer-container {
-  margin-left: 52px;
+.feedback-container {
+  max-width: 140px;
+  margin-left: 60px;
 }
 
 .footer-feedback p {
@@ -1699,14 +1703,23 @@ p.item-price-without {
   color: var(--white);
 }
 
+.developer-container {
+  max-width: 100px;
+  margin-right: 13px;
+}
+
 .social-list {
   display: flex;
-  margin-left: 124px;
+  flex-wrap: wrap;
+  margin-left: 115px;
+  padding: 0;
+  max-width: 180px;
 }
 
 .social-list a {
   display: block;
   margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 .social-button {
